@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  php-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9998:80"
+    # volumes:
+    #   - ./src:/var/www/html
+
