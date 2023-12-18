@@ -4,7 +4,7 @@ Bài này là nối tiếp với các bài trước nha hint từ bài trước 
 đầu tiên mình sẽ get route
                                         /?source=flag2.php.bak
 Thì như src trước nếu mà name bạn bắt đầu bằng kcsc thì sẽ allow_function trong file flag2.php như này
-ban đầu theo tự duy là mình sẽ dùng symlink ![Alt text](image-7.png) để gắn link symbolic cho file này nên mình định như này /?
+ban đầu theo tự duy là mình sẽ dùng symlink để gắn link symbolic cho file này nên mình định như này /?
 
 ![Alt text](image-8.png)
 name=kcsc{symlink("/var/www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/../../www/app/flag2.php","hihihi")}{debug("hihi")} mà không được sau khi đọc docs và tham khảo thêm :< thì mình sẽ gắn symlink mình đã dựng lại trên server khác dùng file Smarty mình kiếm được trên routes /composer.json và .lock(các bạn có thể tìm bản 4.3.4 trên github cũng được nha)
