@@ -1,0 +1,151 @@
+/* Reset and General Styles */
+
+body,
+html {
+    display: grid;
+    place-items: center;
+    height: 85vh;
+    margin: 0;
+    background-color: #c6e2e9;
+}
+
+a {
+    color: #c6e2e9;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+table, th, td {
+    border: 1px dashed  ;
+  }
+
+p, h2{
+  font-family: FiraCode Nerd Font, sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+}
+
+#formContent {
+    border-radius: 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Form Typography */
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #c6e2e9;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    border-radius: 5px;
+    margin: 5px 20px 40px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #c6e2e9;
+}
+
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active {
+    transform: scale(0.95);
+}
+
+input[type=text] {
+    background-color: #f6f6f6;
+    border: 2px solid #f6f6f6;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #c6e2e9;
+}
+
+input[type=text]::placeholder {
+    color: #cccccc;
+}
+
+/* Bottom Buttons */
+
+.bottom-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+}
+
+.bottom-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Highlight */
+
+.highlight {
+    background-color: #ffffcc;
+    padding: 5px;
+    border-radius: 5px;
+}

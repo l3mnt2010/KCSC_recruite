@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container note-container">
+  
+  <h1 class="title" >Note <span id="note-id" style="display: none;">1</span></h1>
+  <h2 class="title" id="error-message" style="display: none;"></h2>
+
+  <div class="note" id="note">
+    <div class="submit_note" id="submit_note">
+    </div>
+    <div>
+      <div id="note-content"></div>
+    </div>
+  </div>
+
+  <div class="take-newnote">
+    <div>
+        <a href="/">Take New Note</a>
+    </div>
+  </div>
+
+  <h2 class="title" id="visting" style="display: none;"></h2>
+  <button onclick="reportToBot()" type="button" class="btn" id="report" style="background-color: #F5624D!important;">Report</button>
+</div>
+<script src="viewnote.js"></script>
+{% endblock %}

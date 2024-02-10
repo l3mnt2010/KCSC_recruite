@@ -68,4 +68,4 @@ class Utils {
 } 
 Vì eval cũng là một hàm nhạy cảm cho nên sẽ biến đổi nó thành 1 lệnh hay một dòng code ví dụ:
 eval("echo "hello";") sẽ in ra hello
-và như này ta có hẳn 1 route_page để RCE
+và như này ta có hẳn 1 route_page để RCE 

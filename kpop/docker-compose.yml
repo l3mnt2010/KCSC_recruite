@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  php-app:
+    build: ./
+    ports:
+      - "8888:80"
+    # volumes:
+    #   - ./src:/var/www/html
+    depends_on:
+      - mysql-db
+    restart: always
+
+  mysql-db:
+    image: mysql:8.0
+    restart: always
+    # ports:
+    #   - 3306:3306
+    environment:
+      MYSQL_USER: KCSC
+      MYSQL_PASSWORD: REDACTED
+      MYSQL_DATABASE: KCSC_TTV
+      MYSQL_ROOT_PASSWORD: REDACTED
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/db.sql

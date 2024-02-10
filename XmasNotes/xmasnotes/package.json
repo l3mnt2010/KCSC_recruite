@@ -1,0 +1,23 @@
+{
+  "name": "webchall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "endy",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.3",
+    "nunjucks": "^3.2.3",
+    "puppeteer": "^13.3.2",
+    "sqlite-async": "^1.1.2",
+    "uuid": "^9.0.1"
+  }
+}

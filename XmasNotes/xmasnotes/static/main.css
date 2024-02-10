@@ -1,0 +1,98 @@
+html {
+    background-color: #34A65F;
+}
+
+body {
+    background-color: #34A65F!important;
+}
+
+canvas {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+h1 {
+    --color1: #0F8A5F!important;
+    --color2: #CC231E!important;
+    background: repeating-linear-gradient(
+      45deg,
+      var(--color1),
+      var(--color1) 30px,
+      var(--color2) 30px,
+      var(--color2) 60px
+    );
+    background-clip: text;
+    color: transparent!important;
+    -webkit-background-clip: text;
+    animation: 40s linear 0s infinite move;
+}
+  
+@keyframes move {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 1000px;
+    }
+}
+
+.title {
+    color: #235E6F;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.container {
+    margin-top: 200px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    color: white;
+    width: 35%!important;
+}
+
+.note-container {
+    margin-top: 150px;
+}
+
+.btn {
+    margin-top: 30px!important;
+    margin-bottom: 15px!important;
+    background-color: #0F8A5F!important;
+    color: white!important;
+}
+
+.save-note {
+    font-weight: 400!important;
+}
+
+.take-newnote {
+    margin-left: 5px;
+}
+
+#previous > div > a, #next > div > a {
+    margin-top: 5px!important;
+    margin-bottom: 0px!important;
+    margin-right: 10px;
+}
+
+#report {
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
+}
+
+#note-content {
+    margin-left: 5px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+#visting {
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+}
